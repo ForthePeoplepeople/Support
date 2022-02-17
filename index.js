@@ -4,8 +4,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     // User is signed in.
       window.location = 'home_viewer.html'; 
     
-    
-
+   
     }
 
   } else {
