@@ -1,28 +1,32 @@
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-window.location.href="home_viewer.html";
-window.location.replace("home_viewer.html");
+
+    document.getElementById("user_div").style.display = "block";
+    document.getElementById("login_div").style.display = "none";
+
     var user = firebase.auth().currentUser;
-window.alert=(error +"is error")
+
     if(user != null){
-window.alert=(error +"is error")
-      window.location.href="login.html";
-window.location.replace("login.html");
+
+      var email_id = user.email;
+      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+
     }
 
   } else {
     // No user is signed in.
 
-    window.alert("Please Check Your Details"+ error);
+    document.getElementById("user_div").style.display = "none";
+    document.getElementById("login_div").style.display = "block";
 
   }
 });
 
 function login(){
 
-  var userEmail = document.getElementById("email").value;
-  var userPass = document.getElementById("password").value;
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
 
   firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
     // Handle Errors here.
