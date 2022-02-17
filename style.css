@@ -1,0 +1,30 @@
+#header{
+  font-family: cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+nav {
+  border: 5px Solid black;
+  white-space: nowrap;
+  overflow: auto;
+}
+nav li{
+  display: inline-block;
+  padding: 2%;
+  font-size: 50px;
+}
+nav a{
+  text-decoration: none;
+  display: inline-block;
+  text-align:center;
+}
+
+#footer{
+  font-family: cursive;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: black;
+  padding: 5px;
+}
