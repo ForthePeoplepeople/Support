@@ -2,6 +2,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     window.location.href = "index.html";
+    window.location.replace("http://www.w3schools.com");
     document.getElementById("user_div").style.display = "block";
     document.getElementById("login_div").style.display = "none";
 
