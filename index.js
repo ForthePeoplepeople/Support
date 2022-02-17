@@ -1,8 +1,7 @@
 firebase.auth().onAuthStateChanged(function(user) {
 
-  if (user) {
-    location.replace("home_viewer.html")
-
+  if (user){
+    location.replace("home_viewer.html");
 });
 
 function login(){
