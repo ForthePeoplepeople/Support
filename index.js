@@ -7,3 +7,8 @@ firebase.auth.onAuthStateChangeed((user)=>{
     location.replace("home_viewer.html")
   }
 })
+function login(){
+  const email = getElementById('email').value
+  const password = getElementById('password').value
+firebase.auth()signInWithEmailAndPassword(email, password)
+}
