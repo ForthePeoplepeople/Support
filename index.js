@@ -4,6 +4,6 @@ document.getElementById('loginform').addEventListner("submit",(event)=>{
 })
 firebase.auth.onAuthStateChangeed((user)=>{
   if(user){
-    location.replace("viewer/home_viewer.html")
+    location.replace("home_viewer.html")
   }
 })
