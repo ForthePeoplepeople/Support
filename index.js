@@ -1,8 +1,8 @@
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-    window.location.href = "index.html";
-    window.location.replace("http://www.w3schools.com");
+    window.location.href="index.html";
+    
     document.getElementById("user_div").style.display = "block";
     document.getElementById("login_div").style.display = "none";
 
@@ -25,8 +25,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 
 function login(){
-         window.location.href = "https://stackabuse.com/";
-        
+         
   var userEmail = document.getElementById("email_field").value;
   var userPass = document.getElementById("password_field").value;
 
