@@ -14,7 +14,7 @@ window.location.replace("login.html");
   } else {
     // No user is signed in.
 
-    window.alert("Please Check Your Details");
+    window.alert("Please Check Your Details"+ error);
 
   }
 });
