@@ -4,7 +4,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     document.getElementById("user_div").style.display = "block";
     document.getElementById("login_div").style.display = "none";
-
+window.location.href = "home_viewer.html"
     var user = firebase.auth().currentUser;
 
     if(user != null){
