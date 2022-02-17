@@ -4,7 +4,7 @@ const auth = getAuth();
 onAuthStateChanged(auth, (user) => {
   if (user) {
    window.alert(user_email+"successfully login")
-   window.location = "viewer/home_viewer.html"
+   window.location.href = "viewer/home_viewer.html"
     const uid = user.uid;
     var user = firebase.auth()currentUser;
     if(user != null){
