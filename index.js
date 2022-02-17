@@ -4,9 +4,9 @@ firebase.auth().onAuthStateChanged(function(user) {
 window.location.href="home_viewer.html";
 window.location.replace("home_viewer.html");
     var user = firebase.auth().currentUser;
-
+window.alert=(error +"is error")
     if(user != null){
-
+window.alert=(error +"is error")
       window.location.href="login.html";
 window.location.replace("login.html");
     }
