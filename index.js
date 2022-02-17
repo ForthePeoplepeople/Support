@@ -2,13 +2,13 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
 window.location.href="home_viewer.html";
-
+window.location.replace("home_viewer.html");
     var user = firebase.auth().currentUser;
 
     if(user != null){
 
       window.location.href="login.html";
-
+window.location.replace("login.html");
     }
 
   } else {
