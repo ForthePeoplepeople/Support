@@ -5,7 +5,11 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
    window.alert(user_email+"successfully login")
     const uid = user.uid;
-    
+    var user = firebase.auth()currentUser;
+    if(user != null){
+      var email_id = user.email;
+      document.getElementById('userpara').innerHTML = ("Welcome User" + email_id)
+    }
   } else {
     window.alert("Error"+error)
   }
@@ -29,4 +33,15 @@ signInWithEmailAndPassword(auth, user_email, user_password)
     const errorMessage = error.message;
   });
   window.alert("Error"+ error)
+}
+
+function logout(){
+  import { getAuth, signOut } from "firebase/auth";
+
+const auth = getAuth();
+signOut(auth).then(() => {
+  // Sign-out successful.
+}).catch((error) => {
+  // An error happened.
+});
 }
