@@ -81,6 +81,18 @@ body{
         </style>
     </head>
     <body class="d-flex justify-content-center p-5">
+          <div id="header">
+      <h1 >Support</h1>
+      <q>Belive in us. You are at right place</q>
+     <nav>
+        <li><a href="index.html">Home</a></li>
+      <li><a href="contact_us.html">Contact us</a></li>
+   <li><a href="login.html">Login</a></li>
+   <li><a href="signup.html">Signup</a></li>
+  
+     </nav>
+    
+    </div>
         <div class="card">
             <div class="card-header">
                 <center><h3>Login Form</h3></center>
@@ -113,20 +125,8 @@ body{
         <script src="login.js"></script>
     
       
-    <div id="header">
-      <h1 >Support</h1>
-      <q>Belive in us. You are at right place</q>
-     <nav>
-        <li><a href="index.html">Home</a></li>
-      <li><a href="contact_us.html">Contact us</a></li>
-   <li><a href="login.html">Login</a></li>
-   <li><a href="signup.html">Signup</a></li>
-  
-     </nav>
-    
-    </div>
     <div id="body">
-  <form id="loginform" >
+  <form id="loginform" onsubmit="login()">
   <div class="imgcontainer">
     <img src="images/profile.png" alt="Avatar" class="avatar">
   </div>
@@ -146,7 +146,7 @@ body{
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+    <span class="psw" > <a href="#"onclick="forgotPass()">Forgot Password?</a></span>
   </div>
 </form>
 </div>
