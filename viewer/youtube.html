@@ -2,33 +2,112 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Youtube Earnings</title>
+    <meta name="" content="">
+    <title>Support</title>
     <style type="text/css" media="all">
-      .youtube{
-        border: 3px double #00ccff00;
+      #header h1{
+        font-family: cursive;
+        padding: 2%;
+        display: inline-block;
+        font-size: 50px;
       }
+      #header button, span{
+        padding: 2%;
+        font-size: 20px;
+        float: right;
+        margin-top: 5%;
+      }
+      
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+      
     </style>
   </head>
   <body>
     <div id="header">
-      
+      <h1>Support</h1>
+        <button onclick="logout()">&times</button>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
     <div id="body">
-      <div class="youtube">
-        <h2>Earn money by liking YouTube video</h2>
-      </div>
-      <div class="youtube">
-          <h2>Earn money by subscribing YouTube Channel</h2>
-      </div>
-      <div class="youtube">
-          <h2>Earn money by sharing YouTube video</h2>
-      </div>
-      <div class="youtube">
-          <h2>Earn money by commenting YouTube video</h2>
-      </div>
-      <div class="youtube">
-          <h2>Earn money by watching YouTube video</h2>
-      </div>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="https://www.serveindia.ga/viewer.html">Account Overview</a>
+    <a href="viewer/youtube.html">Youtube Earnings (Task 1)</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<center>
+  <h2>Account Overview</h2>
+</center>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+      
+    <!-- The core Firebase JS SDK is lways required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="https://www.serveindia.ga/firebase.js"></script>
+    <script src="https://www.serveindia.ga/viewer.js"></script>
     </div>
     <div id="footer">
       
