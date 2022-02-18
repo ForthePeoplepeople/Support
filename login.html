@@ -126,6 +126,31 @@ span.psw {
         <script src="login.js"></script>
         
     </body>
+        <div id="body">
+  <form id="loginform" onsubmit="login()" >
+  <div class="imgcontainer">
+    <img src="images/profile.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input id="email" type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" >Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#" onclick="forgotPass()">password?</a></span>
+  </div>
+</form>
+</div>
         <div id="footer">
       <h3>Copyright © 2022 belongs to Bandi Anand Rohit</h3>
     </div>
