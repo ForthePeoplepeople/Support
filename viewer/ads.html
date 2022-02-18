@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title>Support</title>
+    <style type="text/css" media="all">
+      #header h1{
+        font-family: cursive;
+        padding: 2%;
+        display: inline-block;
+        font-size: 50px;
+      }
+      #header button, span{
+        padding: 2%;
+        font-size: 20px;
+        float: right;
+        margin-top: 5%;
+      }
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+      .youtube{
+        text-align: center;
+        border: 5px double #000000;
+        padding: 5%;
+        margin: 5%;
+        
+      }
+      .youtube a{
+        text-align: center;
+        border: 5px solid #000000;
+        padding: 3%;
+        text-decoration-color: white;
+        background-color: #40e922;
+        text-decoration: none;
+        margin-top: 100%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Support</h1>
+        <button onclick="logout()">&times</button>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <div id="body">
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="https://www.serveindia.ga/viewer.html">Account Overview</a>
+    <a href="youtube.html">Youtube Earnings (Task 1)</a>
+    <a href="ads.html">Advertisement Earnings</a>
+    <a href="#">Clints</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<center>
+  <h2>Advertisement Earings</h2>
+</center>
+
+    <div id="body">
+      <div class="youtube">
+        <h2 style="border-bottom: 3px solid #000000;">Earn money by liking &#x1F44D; YouTube video</h2>
+        <p>Start your earnings by click on the button below.&#x1F447;</p>
+        <br />
+        <a href="#">Earn Money &#x1F4B8;&#x1F911;&#128176;</a>
+      </div>
+      <div class="youtube">
+          <h2 style="border-bottom: 3px solid #000000;">Earn money by subscribing YouTube Channel</h2>
+          <p>Start your earnings by click on the button below.&#x1F44B;</p>
+          <br />
+          <a href="#">Earn Money &#x1F4B8;&#x1F911;&#128176;</a>
+      </div>
+      <div class="youtube">
+          <h2 style="border-bottom: 3px solid #000000;">Earn money by sharing &#x1F4F2; YouTube video</h2>
+          <p>Start your earnings by click on the button below.&#x1F447;</p>
+          <br />
+          <a href="#">Earn Money &#x1F4B8;&#x1F911;&#128176;</a>
+      </div>
+      <div class="youtube">
+          <h2 style="border-bottom: 3px solid #000000;">Earn money by commenting &#x1F4E9; YouTube video</h2>
+          <p>Start your earnings by click on the button below.&#x1F447;</p>
+          <br />
+          <a href="#">Earn Money &#x1F4B8;&#x1F911;&#128176;</a>
+      </div>
+      <div class="youtube">
+          <h2 style="border-bottom: 3px solid #000000;">Earn money by watching &#x23F3; YouTube video</h2>
+          <p>Start your earnings by click on the button below.&#x1F447;</p>
+          <br />
+          <a href="#">Earn Money &#x1F4B8;&#x1F911;&#128176;</a>
+      </div>
+    </div>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+      
+    <!-- The core Firebase JS SDK is lways required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="https://www.serveindia.ga/firebase.js"></script>
+    <script src="https://www.serveindia.ga/viewer.js"></script>
+    </div>
+    <div id="footer">
+      
+    </div>
+  </body>
+</html>
 
