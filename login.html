@@ -91,31 +91,38 @@ span.psw {
      </nav>
     
     </div>
-    <div id="body">
-  <form onsubmit="login()" id="loginform" >
-  <div class="imgcontainer">
-    <img src="images/profile.png" alt="Avatar" class="avatar">
-  </div>
+    <body class="d-flex justify-content-center p-5">
+        <div class="card">
+            <div class="card-header">
+                <center><h3>Login Form</h3></center>
+            </div>
+            <form onsubmit="login()" id="loginForm" class="card-body px-5 py-4">
+                <center><small><span id="error" style="color: red"></span></small></center>
+                <center><label class="custom-field">
+                    <input id="email" type="text" class="input" required />
+                    <span class="placeholder">Email Id</span>
+                </label><br />
+                <label class="custom-field">
+                    <input id="password" type="password" class="input" required />
+                    <span class="placeholder">Password</span>
+                </label></center><br /><br/>
+                <a href="#" onclick="forgotPass()">Forgot Password</a>
+                <center><button type="submit" class="btn btn-primary">Login</button>
+                <button onclick="signUp()" class="btn btn-secondary">Sign Up</button>
+                </center>
+            </form>
+        </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input id="email" type="text" placeholder="Enter Username" name="uname" required>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
 
-    <label for="psw"><b>Password</b></label>
-    <input id="password" type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" >Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#"onclick="forgotPass()">password?</a></span>
-  </div>
-</form>
-</div>
+        <script src="firebase.js"></script>
+        <script src="index.js"></script>
+    </body>
     <div id="footer">
       <h3>Copyright © 2022 belongs to Bandi Anand Rohit</h3>
     </div>
