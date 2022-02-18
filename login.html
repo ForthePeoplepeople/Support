@@ -22,63 +22,6 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
         ></script>
         <link href="./index.css" rel="stylesheet" />
-        <style type="text/css" media="all">
-          @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
-body{
-    background: #F8F8F8;
-}
-
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-
-.custom-field{
-    position: relative;
-    font-size: 14px;
-    padding-top: 20px;
-    margin-top: 5px;
-}
-
-.custom-field input{
-    padding: 12px;
-    width: 300px;
-    font-size: 14px;
-    border-radius: 3px;
-    border: 1.5px solid gray;
-    outline-color: deepskyblue;
-}
-
-.custom-field .placeholder{
-    position: absolute;
-    left: 12px;
-    top: calc(50% + 10px);
-    transform: translateY(-50%);
-    color: #aaa;
-    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
-}
-
-.custom-field input:valid + .placeholder,
-.custom-field input:focus + .placeholder{
-    top: 21px;
-    font-size: 10px;
-    color: #222;
-    padding: 5px;
-    background: white;
-}
-
-.message{
-    font-size: 70px;
-    font-family: 'Ubuntu', sans-serif;
-    color: steelblue;
-}
-
-.success{
-    font-size: 18px;
-    margin-top: 15px;
-    color: seagreen;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-        </style>
     </head>
     <body class="d-flex justify-content-center p-5">
         <div class="card">
@@ -110,6 +53,6 @@ body{
         <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
 
         <script src="firebase.js"></script>
-        <script src="index.js"></script>
+        <script src="login.js"></script>
     </body>
 </html>
