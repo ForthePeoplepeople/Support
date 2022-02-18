@@ -9,7 +9,7 @@
    text-align:right;
  }
  .button{
-   width: 10%;
+   width: 20%;
    height: auto;
    padding: 5%;
    margin: 5%;
@@ -30,23 +30,21 @@
     
 
     </div>
-    <body class="d-flex justify-content-center p-5">
-        <div class="card">
-            <div class="card-header">
+    <body >
+        <div >
+            <div >
                 <center><h3>Login Form</h3></center>
             </div>
-            <form onsubmit="login()" id="loginForm" class="card-body px-5 py-4">
+            <form onsubmit="login()" id="loginForm" >
                 <center><small><span id="error" style="color: red"></span></small></center>
-                <center><label class="custom-field">
+                <center>
                   <h4 class="form">Email</h4>
                     <input id="email" type="text" required />
-                    
-                </label><br />
-                <label class="custom-field">
+                    <br />
                   <h4 class="forn">Password</h4>
                     <input id="password" type="password"  required />
                     
-                </label></center><br /><br/>
+                </center><br /><br/>
                 <a href="#" onclick="forgotPass()" id="fp">Forgot Password</a>
                 <center><button type="submit" class="button">Login</button>
                 <button onclick="signUp()" class="button">Sign Up</button>
