@@ -18,8 +18,8 @@ function login(){
 }
 
 function signUp(){
-    const email = document.getElementById("email").value
-    const password = document.getElementById("password").value
+    const email = document.getElementById("emails").value
+    const password = document.getElementById("passwords").value
     firebase.auth().createUserWithEmailAndPassword(email, password)
     .catch((error) => {
         document.getElementById("error").innerHTML = error.message
