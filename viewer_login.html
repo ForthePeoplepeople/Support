@@ -31,7 +31,7 @@
 
     </div>
     <div id="body">
-        <div>
+        <div id="login">
                 <center><h3>Login Form</h3></center>
             <form onsubmit="login()" id="loginForm" >
                 <center><small><span id="error" style="color: red"></span></small></center>
@@ -50,7 +50,25 @@
                 </center>
             </form>
         </div>
-        
+           <div id="signup">
+                <center><h3>Signup Form</h3></center>
+            <form onsubmit="login()" id="loginForm" >
+                <center><small><span id="error" style="color: red"></span></small></center>
+                <center>
+                  <h4 class="form">Email</h4>
+                    <input id="email" type="text" required />
+                    <br />
+                  <h4 class="forn">Password</h4>
+                    <input id="password" type="password"  required />
+                    
+                </center>
+                <br />
+                <a href="#" onclick="forgotPass()" id="fp">Forgot Password</a>
+                <center><button type="submit" class="button">Login</button>
+                <button onclick="signUp()" class="button">Sign Up</button>
+                </center>
+            </form>
+        </div>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
 
