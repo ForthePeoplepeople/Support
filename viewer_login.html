@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <title>SUPPORT</title>
     <style type="text/css" media="all">
+  #body{
+    display: flex;
+    justify-content: centre;
+  }
  #fp{
    text-align:right;
  }
@@ -52,19 +56,18 @@
         </div>
            <div id="signup">
                 <center><h3>Signup Form</h3></center>
-            <form onsubmit="login()" id="loginForm" >
+            <form>
                 <center><small><span id="error" style="color: red"></span></small></center>
                 <center>
                   <h4 class="form">Email</h4>
-                    <input id="email" type="text" required />
+                    <input id="emails" type="text" required />
                     <br />
                   <h4 class="forn">Password</h4>
-                    <input id="password" type="password"  required />
+                    <input id="passwords" type="password"  required />
                     
                 </center>
                 <br />
-                <a href="#" onclick="forgotPass()" id="fp">Forgot Password</a>
-                <center><button type="submit" class="button">Login</button>
+         
                 <button onclick="signUp()" class="button">Sign Up</button>
                 </center>
             </form>
